@@ -1,0 +1,13 @@
+.details{
+    padding: 5px 45px;
+}
+.car-name{
+    font-size: 20px !important;
+    padding: 5px;
+}
+.car-details h6{
+    padding: 9px 20px !important;
+}
+.btn-submit{
+    margin-left: 20px;
+}

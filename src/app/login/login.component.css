@@ -1,0 +1,116 @@
+.main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-end;
+}
+img.bg-login {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.logininner img {
+    width: 160px;
+}
+.text-field{
+    text-align: left;
+}
+
+.logininner form {
+    padding-top: 20px;
+}
+
+.logininner p {
+    margin-bottom: 25px;
+}
+
+.logininner form label {
+    width: 100%;
+    text-align: left;
+    color: #001532;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 5px;
+}
+
+.logininner form input[type="username"],
+.logininner form input[type="password"] {
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    padding: 13px 15px;
+    color: #001532;
+    border-radius: 4px;
+    height: auto !important;
+    background-color: #fff;
+}
+
+.logininner form input[type="submit"],
+.logininner form .btn-sign {
+    width: 100%;
+    background-color: #FF9800;
+    color: #fff;
+    border: 1px solid #FF9800;
+    border-radius: 4px;
+    box-shadow: unset!important;
+    padding: 10px;
+    font-size: 20px !important;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+p.copylogin {
+    margin: 35px 0px 0px 0px;
+    font-size: 18px;
+    color: #001532;
+}
+.logininner {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    padding: 30px 40px;
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0px 3px 6px #7291F980;
+    float: right;
+    text-align: center;
+}
+
+.loginmain h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #005feb;
+}
+
+.reg-btn{
+    color: #005feb !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+.select_btn{
+    width: 200px;
+}
+
+.reg-btn:hover{
+    font-weight: bold !important;
+}
+.tets{
+    position: relative;
+    background: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: auto;
+}
+
+.err-div{
+    color: lightcoral;
+    padding: 6px;
+    border: 1px solid lightcoral;
+    background-color: rgb(245, 204, 210);
+    border-radius: 5px;
+}

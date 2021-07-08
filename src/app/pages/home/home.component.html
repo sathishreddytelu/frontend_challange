@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 car-bg">
+            <!-- <img src="../../assets/images/carbg.jpg" alt="car"> -->
+            <table class='table table-hover text-center'>
+                <thead class="thead-primary">
+                    <tr>
+                        <th>Image</th>
+                        <th>Brand Name</th>
+                        <th>Model</th>
+                        <th>Make</th>
+                        <th>Year</th>
+                        <th>Location</th>
+                        <th>Current Bid</th>
+                        <th>Bid Expair</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let each_data of tableData| paginate: { itemsPerPage: 6, currentPage: p };let i=index">
+                        <td class="car-img"><img [src]="each_data.image" alt="car"></td>
+                        <td>{{each_data.name}}</td>
+                        <td>{{each_data.type}}</td>
+                        <td>{{each_data.make}}</td>
+                        <td>{{each_data.model}}</td>
+                        <td>{{each_data.location}}</td>
+                        <td>{{each_data.currentbid}}</td>
+                        <td>{{each_data.lastdate}}</td>
+                        <td><button class="btn btn-primary btn-danger" (click)="bidding(each_data.id)">Bid Now</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-8"></div>
+        <div class="col-md-4"><pagination-controls (pageChange)="p = $event"></pagination-controls></div>
+        
+    </div>
+</div>

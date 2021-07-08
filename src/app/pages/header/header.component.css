@@ -1,0 +1,130 @@
+.navbar-brand {
+    font-size: 30px;
+    color: blue;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    left: -80px !important;
+}
+
+.dropdown-menu a:hover {
+    font-weight: bold;
+    color: rgb(68, 68, 199);
+}
+
+.icon12 {
+    border: 1px solid lightgray;
+    border-radius: 45%;
+}
+
+.dropdown-toggle {
+    margin-top: -15px;
+    margin-left: 3px;
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+.container-fluid.shadow.navbar-expand-lg {
+    height: 60px;
+    padding: 0px 30px;
+    background: white !important;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav.navbar {
+    height: 100%;
+}
+
+a.navbar-brand {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+a.navbar-brand img {
+    height: 36px;
+    margin-right: 10px;
+}
+
+.navbar-brand label {
+    margin: 0px;
+    font-size: 24px;
+}
+
+ul.navbar-nav.ml-auto {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item label {
+    margin: 0px;
+    /* margin-left: 30px !important; */
+}
+
+.nav-item {
+    margin-left: 15px !important;
+    color: #001532 !important;
+}
+
+.nav-item * {
+    color: #001532;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+li.nav-item.user-Name {
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+}
+
+li.nav-item.user-Name svg {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+svg.svg-inline--fa.fa-power-off {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.nav-item *:hover,
+.nav-item a:hover {
+    color: #005feb!important;
+    cursor: pointer;
+}
+
+.nav-item * svg path {
+    fill: #001532 !important;
+}
+
+.nav-item *:hover svg path,
+.nav-item:hover a svg path {
+    fill: #005feb !important;
+}
+
+li.nav-item:hover * {
+    font-weight: bold;
+}
+.user-Name{
+    color: #005feb !important;
+    fill: #005feb !important;
+}
+input{
+    padding: 6px;
+    width: 28% !important;
+    margin-left: 150px;
+}
+.search-btn{
+    margin-left: 20px;
+    width: 140px !important;
+}

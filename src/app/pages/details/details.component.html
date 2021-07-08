@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]="selectedData.image" alt="car">
+        </div>
+
+        <div class="col-md-6 details">
+            <div class="bg-primary"><h1 class="text-center car-name"><strong>{{selectedData.name}}-{{selectedData.model}}</strong></h1></div>
+            <div class="car-details">
+                <div><h6>Year : <strong> {{selectedData.make}}</strong></h6></div>
+                <div><h6>Location : <strong>{{selectedData.location}}</strong></h6></div>
+                <div><h6>Damage : <strong>{{selectedData.damage}}</strong></h6></div>
+                <div><h6>No of Bids : <strong>{{selectedData.bidsCount}}</strong></h6></div>
+                <div><h6>Bid Last Date : <strong>{{selectedData.lastdate}}</strong></h6></div>
+                <div><h6>Current Bid : <strong>{{selectedData.currentbid}}</strong></h6></div>
+            </div>
+            <div class="car-details">
+               <h6>Max Bid : <span><input type="text" placeholder="Enter maxmimum bid">  <span class='btn-submit'><button class="btn btn-primary">Submit</button></span></span></h6> 
+            </div>
+        </div>
+    </div>
+</div>

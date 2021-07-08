@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+body,
+body * {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+html,
+body {
+    background: #F5F5F5;
+    height: 100%;
+}
+
+.errspan {
+    color: #F44336 !important;
+    font-size: 12px !important;
+}
+
+svg.errspan {
+    margin-left: 5px;
+}
+
+svg.errspan * {
+    fill: #F44336;
+}
+
+.page_subtitle {
+    color: #005feb;
+    font-weight: 400;
+    padding: 10px 30px;
+    display: none;
+}
+
+.layout {
+    height: calc(100% - 60px);
+    overflow: hidden;
+}
+
+app-root {
+    height: 100%;
+}
+
+.page_layout {
+    height: calc(100% - 30px);
+    margin: 15px 30px 0px 30px;
+    padding: 15px 15px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}

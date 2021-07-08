@@ -1,0 +1,24 @@
+<div class="container-fluid shadow navbar-expand-lg">
+    <nav class="navbar">
+        <a class="navbar-brand" href="/home">
+            <img src="assets/images/logo.png" alt="logo">
+            <label>Carsale</label>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input type="text" placeholder="Search Inventary by Make Model, VIN, and More....">
+        <button class='btn btn-warning search-btn'>Search</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item user-Name">
+                    <label>{{userId}}<em class="fas fa-user"></em></label>
+                </li>
+                <li class="nav-item" (click)="logout()">
+                    <a class=""><em class="fas fa-power-off"></em>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+  

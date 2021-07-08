@@ -1,0 +1,39 @@
+<div class="main">
+    <img src="/assets/images/car_bg_1.jpg" alt="" class="bg-login">
+    <div class="container">
+        <div class="loginmain">
+
+            <div class="logininner">
+                <h3>User Login </h3>
+
+                <div class="login_text row">
+                            <form class="col-md-12 student_login" action="" autocomplete="off" #login_form="ngForm">
+                                <div class="form-group text-field">
+                                    <label for="">Email</label>
+                                    <input type="username" id="user" name="use_name" #use_name="ngModel" class="form-control user_input" [(ngModel)]="username" placeholder="Enter Email id" required>
+                                    <span class="errspan" *ngIf="((use_name.invalid&&login_form.submitted)||(use_name.errors&&use_name.touched))"> 
+                                        <i class="fa fa-info-circle"></i> Email required</span>
+                                </div>
+                                <div class="form-group text-field">
+                                    <label for="">Password<span class="psd-dob"></span></label>
+                                    <input type="password" id="psw" name="user_pasword" #user_pasword="ngModel" class="form-control" [(ngModel)]="password" placeholder="Enter Password" required>
+                                    <span class="errspan" *ngIf="((user_pasword.invalid&&login_form.submitted)||(user_pasword.errors && user_pasword.touched))"> 
+                                       <i class="fa fa-info-circle"></i>
+                                        Password required
+                                    </span>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary select_btn" (click)="userLogin()" [disabled]="!login_form.valid" >Login</button></div>
+                            </form>
+                            <div *ngIf='errMsg' style="padding-top:20px; padding-left:70px">
+                                <div class="err-div" >{{errMsg}}</div>
+                            </div>
+                            <div style="padding-top:20px; padding-left:60px">
+                                <label for="">Don't have an account &#63;</label>
+                                <a class="reg-btn"> Register</a>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
